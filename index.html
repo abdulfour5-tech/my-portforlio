@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maiwada Ahmad | Portfolio</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("-lCcA2OEiy4qvSjAv");
+  })();
+</script>
+
+<body>
+
+<!-- NAVBAR -->
+<header>
+  <div class="container nav">
+  <h2 class="logo">Maiwada<span>.</span></h2>
+  <ul id="menu" class="menu">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div id="menu-btn"><i class="fas fa-bars"></i></div>
+</div>
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="container hero-content fade-in">
+    <h1>Hello, I'm <span>Maiwada Ahmad</span></h1>
+    <p>Web & Mobile Developer</p>
+    <a href="#projects" class="btn">View My Work</a>
+    <a href="cv/Maiwada_CV.pdf" class="btn" download>Download CV</a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section fade-up">
+  <div class="container about">
+    <img src="img/profile.jpg" alt="me">
+    <div>
+      <h2>About Me</h2>
+      <p>
+        I am a passionate developer specialized in web and mobile applications.
+        I build responsive websites and Android apps using modern technologies.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section dark fade-up">
+  <div class="container">
+    <h2>Skills</h2>
+
+    <div class="skills">
+
+      <div>
+        <p>HTML / CSS</p>
+        <div class="bar"><span style="width:90%"></span></div>
+      </div>
+
+      <div>
+        <p>JavaScript</p>
+        <div class="bar"><span style="width:75%"></span></div>
+      </div>
+
+      <div>
+        <p>PHP / MySQL</p>
+        <div class="bar"><span style="width:80%"></span></div>
+      </div>
+
+      <div>
+        <p>Android (Kotlin)</p>
+        <div class="bar"><span style="width:70%"></span></div>
+      </div>
+
+      <div>
+        <p>Flutter</p>
+        <div class="bar"><span style="width:65%"></span></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section fade-up">
+  <div class="container">
+    <h2>Projects</h2>
+
+    <div class="projects">
+
+        <div class="project-card">
+            <img src="img/mallconnect.png">
+            <h3>MallConnect Android App</h3>
+            <p>Shopping app with Firebase authentication, cart and orders.</p>
+            <div class="links">
+            <a href="https://github.com/yourusername/mallconnect" target="_blank">GitHub</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="img/delizia.png">
+            <h3>La Delizia Furniture Website</h3>
+            <p>Multi-language responsive furniture website.</p>
+            <div class="links">
+            <a href="https://github.com/yourusername/la-delizia" target="_blank">GitHub</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="img/crud.png">
+            <h3>PHP CRUD Admin Panel</h3>
+            <p>Authentication, roles, products and categories.</p>
+            <div class="links">
+            <a href="https://github.com/yourusername/php-crud" target="_blank">GitHub</a>
+            </div>
+        </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section dark fade-up">
+  <div class="container center">
+    <h2>Contact Me</h2>
+
+    <form id="contactForm" class="contact-form">
+
+      <input type="text" id="name" placeholder="Your Name">
+      <input type="email" id="email" placeholder="Your Email">
+      <textarea id="message" placeholder="Your Message"></textarea>
+
+      <button type="submit" class="btn">Send Message</button>
+
+      <p id="formMsg"></p>
+
+    </form>
+  </div>
+</section>
+
+
+<script src="js/main.js"></script>
+</body>
+</html>
