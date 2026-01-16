@@ -25,7 +25,7 @@ form.addEventListener('submit', function(e){
   const email = document.getElementById('email').value;
   const message = document.getElementById('message').value;
 
-  emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", {
+  emailjs.send("service_tc2rlrq", "template_9xitu6x", {
     name: name,
     email: email,
     message: message
@@ -40,6 +40,7 @@ form.addEventListener('submit', function(e){
      msg.style.color = "red";
   });
 });
+
 
 
 
