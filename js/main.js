@@ -25,6 +25,15 @@ form.addEventListener('submit', function(e){
   const email = document.getElementById('email').value;
   const message = document.getElementById('message').value;
 
+  if(!name || !email || !message){
+    msg.innerText = "Please fill all fields.";
+    msg.style.color = "red";
+    return;
+  }
+
+  msg.innerText = "Sending...";
+  msg.style.color = "white";
+
   emailjs.send("service_tc2rlrq", "template_9xitu6x", {
     name: name,
     email: email,
@@ -40,6 +49,7 @@ form.addEventListener('submit', function(e){
      msg.style.color = "red";
   });
 });
+
 
 
 
