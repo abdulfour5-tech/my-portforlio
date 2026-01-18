@@ -8,6 +8,7 @@
 body{
     background:#0f172a;
     color:#fff;
+    padding-top:70px;
 }
 
 .container{
@@ -17,10 +18,13 @@ body{
 }
 
 header{
+    height:70px;
+    top:0;
+    left:0;
     position:fixed;
     width:100%;
     background:#020617;
-    z-index:100;
+    z-index:1002;;
 }
 
 .nav{
@@ -49,6 +53,10 @@ header{
 .nav ul a{
     color:white;
     text-decoration:none;
+}
+
+.menu{
+  z-index:1000;
 }
 
 .hero{
@@ -187,22 +195,29 @@ header{
 
 /* Mobile menu */
 #menu-btn{
+  position:relative;
   display:none;
   font-size:25px;
   cursor:pointer;
+  z-index:1001;
 }
 
+
 @media(max-width:768px){
-.menu{
-    position:absolute;
-    top:60px;
-    right:0;
+
+  .menu{
+    position:fixed;
+    top:70px;
+    left:0;
     background:#020617;
     width:100%;
     flex-direction:column;
     align-items:center;
-    display:none;
     padding:20px 0;
+
+    opacity:0;
+    pointer-events:none;
+    transition:.3s ease;
   }
 
   .menu li{
@@ -210,11 +225,13 @@ header{
   }
 
   .menu.show-menu{
-    display:flex;
+    opacity:1;
+    pointer-events:auto;
   }
 
   #menu-btn{
     display:block;
+    z-index:1001;
   }
 
   .about{
@@ -234,6 +251,3 @@ header{
     width:95%;
   }
 }
-
-
-
