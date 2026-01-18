@@ -132,12 +132,12 @@ header{
 .fade-up{
     opacity:0;
     transform:translateY(30px);
-    transition:1s;
+    transition:1s ease;
 }
 
 .fade-in{
     opacity:0;
-    transition:1s;
+    transition:1s ease;
 }
 
 .show{
@@ -234,5 +234,6 @@ header{
     width:95%;
   }
 }
+
 
 
