@@ -15,6 +15,14 @@ const menu = document.getElementById('menu');
 
 btn.onclick = ()=> menu.classList.toggle('show-menu');
 
+// Close menu when clicking a link (mobile)
+document.querySelectorAll('#menu a').forEach(link=>{
+  link.addEventListener('click', ()=>{
+    menu.classList.remove('show-menu');
+  });
+});
+
+
 const form = document.getElementById('contactForm');
 const msg = document.getElementById('formMsg');
 
@@ -49,6 +57,7 @@ form.addEventListener('submit', function(e){
      msg.style.color = "red";
   });
 });
+
 
 
 
